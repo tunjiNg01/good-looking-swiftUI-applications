@@ -14,6 +14,9 @@
 		52181EB22A2B3EDE00B58E18 /* WalletAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52181EB12A2B3EDE00B58E18 /* WalletAppTests.swift */; };
 		52181EBC2A2B3EDE00B58E18 /* WalletAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52181EBB2A2B3EDE00B58E18 /* WalletAppUITests.swift */; };
 		52181EBE2A2B3EDE00B58E18 /* WalletAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52181EBD2A2B3EDE00B58E18 /* WalletAppUITestsLaunchTests.swift */; };
+		52DD120E2A41CE060015BF08 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52DD120D2A41CE060015BF08 /* data.json */; };
+		52DD12112A41D50B0015BF08 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD12102A41D50B0015BF08 /* Transactions.swift */; };
+		52DD12132A41DA7B0015BF08 /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD12122A41DA7B0015BF08 /* TransactionListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		52181EB72A2B3EDE00B58E18 /* WalletAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52181EBB2A2B3EDE00B58E18 /* WalletAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppUITests.swift; sourceTree = "<group>"; };
 		52181EBD2A2B3EDE00B58E18 /* WalletAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52DD120D2A41CE060015BF08 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		52DD12102A41D50B0015BF08 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		52DD12122A41DA7B0015BF08 /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,11 @@
 		52181E9F2A2B3EDB00B58E18 /* WalletApp */ = {
 			isa = PBXGroup;
 			children = (
+				52DD120F2A41D31D0015BF08 /* Models */,
 				52181EA02A2B3EDB00B58E18 /* WalletAppApp.swift */,
 				52181EA22A2B3EDB00B58E18 /* ContentView.swift */,
 				52181EA42A2B3EDE00B58E18 /* Assets.xcassets */,
+				52DD120D2A41CE060015BF08 /* data.json */,
 				52181EA62A2B3EDE00B58E18 /* Preview Content */,
 			);
 			path = WalletApp;
@@ -125,6 +133,15 @@
 				52181EBD2A2B3EDE00B58E18 /* WalletAppUITestsLaunchTests.swift */,
 			);
 			path = WalletAppUITests;
+			sourceTree = "<group>";
+		};
+		52DD120F2A41D31D0015BF08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52DD12102A41D50B0015BF08 /* Transactions.swift */,
+				52DD12122A41DA7B0015BF08 /* TransactionListModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52181EA82A2B3EDE00B58E18 /* Preview Assets.xcassets in Resources */,
+				52DD120E2A41CE060015BF08 /* data.json in Resources */,
 				52181EA52A2B3EDE00B58E18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DD12132A41DA7B0015BF08 /* TransactionListModel.swift in Sources */,
+				52DD12112A41D50B0015BF08 /* Transactions.swift in Sources */,
 				52181EA32A2B3EDB00B58E18 /* ContentView.swift in Sources */,
 				52181EA12A2B3EDB00B58E18 /* WalletAppApp.swift in Sources */,
 			);

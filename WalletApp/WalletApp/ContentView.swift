@@ -41,7 +41,7 @@ struct ContentView: View {
                         .frame(width: 50)
                     
                   
-                }
+                }.padding(36)
                 Spacer()
                 VStack(alignment: .center, spacing: 20){
                     ProfileAvartar()
@@ -61,7 +61,6 @@ struct ContentView: View {
                     }
                     .padding([.trailing, .leading], 24)
                     .padding([.top, .bottom], 12)
-                    
                     .overlay{
                         RoundedRectangle(cornerRadius: 36)
                             .stroke(lineWidth: 2)
@@ -70,9 +69,9 @@ struct ContentView: View {
                     }
                 }
                 Spacer()
-                
+                CardStack()
             }
-            .padding(36)
+           
 
         }
         .ignoresSafeArea()

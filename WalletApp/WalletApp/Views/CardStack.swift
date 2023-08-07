@@ -24,12 +24,11 @@ struct CardStack: View {
                             .foregroundColor(Color("blue"))
             }.padding(36)
                     
-        }.offset(y:40)
+        }.offset(y:48)
             
             RoundedRectangle(cornerRadius: 96)
                 .fill(Color("blue"))
-                .frame(height: 80)
-                
+                .frame( height: 80)
                 .overlay{
                     HStack(alignment: .top) {
                 Image(systemName: "creditcard.fill")
@@ -40,12 +39,11 @@ struct CardStack: View {
                             .foregroundColor(.white)
             }.padding(36)
                     
-        }
-                .offset(y:20)
+        }.offset(y:32)
             
             RoundedRectangle(cornerRadius: 96)
                 .fill(Color("lightblue"))
-                .frame(height: 80)
+                .frame( height: 80)
                 
                 .overlay{
                     HStack(alignment: .top) {
@@ -57,11 +55,12 @@ struct CardStack: View {
                             .foregroundColor(.white)
             }.padding(36)
                     
-        }
+                }.offset(y: 20)
             
            
             
         }
+        .frame(width: .infinity)
     }
 }
 

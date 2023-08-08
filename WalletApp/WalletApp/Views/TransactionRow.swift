@@ -8,23 +8,31 @@
 import SwiftUI
 
 struct TransactionRow: View {
+    let transaction: Transactions
     var body: some View {
         VStack(alignment: .leading, spacing: 12){
             HStack(alignment: .firstTextBaseline){
+                if transaction.type == "credit"{
                 Image(systemName: "arrowtriangle.down.fill")
                     .foregroundColor(.green)
-                Text("Mama Jos")
+                    
+                }else{
+                    Image(systemName: "arrowtriangle.down.fill")
+                        .foregroundColor(.red)
+                }
+                Text(transaction.name)
                     .font(.headline)
                     .foregroundColor(.white)
                 Spacer()
-                Text("$280.00")
+                Text("$\(transaction.amount)")
                     .font(.headline)
                     .foregroundColor(.white)
             }
-            Text("Monday • 4416 18th St, San Francisco, CA 94114, United States")
+            Text(transaction.address)
                 .font(.subheadline)
                 .foregroundColor(.white)
         }.padding(24)
+        .background(Color("blue"))
         .overlay{
             RoundedRectangle(cornerRadius: 16)
                 .fill(.white.opacity(0.1))
@@ -34,6 +42,8 @@ struct TransactionRow: View {
 
 struct TransactionRow_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionRow()
+        TransactionRow(transaction: .previewData[0])
     }
 }
+
+

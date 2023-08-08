@@ -15,6 +15,7 @@ struct Transactions {
     let postcode: String
     let country: String
     let type: String
+    let amount: CDouble
     let transactionDate: Date
     
     enum CodingKeys: String, CodingKey{
@@ -24,6 +25,7 @@ struct Transactions {
         case postcode
         case country
         case type
+        case amount
         case transactionDate
     }
 }
@@ -44,6 +46,7 @@ extension Transactions {
         jsonDecoder.dateDecodingStrategy = .iso8601
         
         let apiResponse = try! jsonDecoder.decode(TransactionListModel.self, from: data)
+        print(apiResponse)
         
         return apiResponse.transactions ?? []
         

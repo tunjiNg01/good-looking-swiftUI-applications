@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let transactions: [Transactions]
     var body: some View {
         NavigationStack{
             ZStack {
@@ -50,7 +51,7 @@ struct ContentView: View {
                         
                     }
                     NavigationLink{
-                        TransactionViews()
+                        TransactionViews(transactions: transactions)
                     }label: {
                         ActionButtonView()
                     }
@@ -72,6 +73,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(transactions: Transactions.previewData)
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct WalletAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(transactions: Transactions.previewData)
         }
     }
 }

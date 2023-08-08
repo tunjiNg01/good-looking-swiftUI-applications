@@ -1,8 +1,9 @@
 {
-    "status": "ok"
+    "status": "ok",
     "transactions": [
         {
             "name":"Robert hurtisk",
+            "amount":230.32,
             "daysOfWeek":"Monday",
             "address":"123, almond ray street VI",
             "postcode":"34245",
@@ -12,32 +13,35 @@
         },
         {
             "name":"John Ortis",
+            "amount":140.50,
             "daysOfWeek":"Tuesday",
             "address":"B23, jack rigor st. drive thirtyfive",
             "postcode":"34245",
             "country": "Netherlands",
             "type": "credit",
-            "transactionDate": "2023-05-06T15:31:53Z",
+            "transactionDate": "2023-05-06T15:31:53Z"
         },
         
         {
             "name":"Erlin Halland",
+            "amount":145.90,
             "daysOfWeek":"Thursday",
-            "address":"D56323, ricky road st. thomas Inc."
+            "address":"D56323, ricky road st. thomas Inc.",
             "postcode":"34245",
             "country": "Norway",
             "type": "credit",
-            "transactionDate": "2023-02-08T15:31:53Z",
+            "transactionDate": "2023-02-08T15:31:53Z"
         },
         
         {
             "name":"Martin odegards ",
+            "amount":165.90,
             "daysOfWeek":"Sunday",
-            "address":"A6356, ricky road st. thomas Inc."
+            "address":"A6356, ricky road st. thomas Inc.",
             "postcode":"34245",
             "country": "Norway",
-            "type": "credit",
-            "transactionDate": "2023-07-01T15:31:53Z",
-        },
+            "type": "debit",
+            "transactionDate": "2023-07-01T15:31:53Z"
+        }
     ]
 }

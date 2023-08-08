@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TransactionViews: View {
+    let transactions: [Transactions]
     var body: some View {
         ZStack(){
             VStack(alignment: .leading){
@@ -27,10 +28,8 @@ struct TransactionViews: View {
                     .font(.title2)
                     .foregroundColor(.white)
                
-                TransactionRow()
-                TransactionRow()
-                TransactionRow()
-                TransactionRow()
+              TransactionListView(transactions: transactions)
+                
                 
             }
             .padding([.leading, .trailing], 18)
@@ -42,6 +41,6 @@ struct TransactionViews: View {
 
 struct TransactionViews_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionViews()
+        TransactionViews(transactions: Transactions.previewData)
     }
 }

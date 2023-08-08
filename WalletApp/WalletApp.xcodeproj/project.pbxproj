@@ -11,6 +11,7 @@
 		5209408E2A80F80800231D7C /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209408D2A80F80800231D7C /* ActionButtonView.swift */; };
 		520940902A80FF4F00231D7C /* ColorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209408F2A80FF4F00231D7C /* ColorDetail.swift */; };
 		520940922A81271C00231D7C /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520940912A81271C00231D7C /* TransactionRow.swift */; };
+		520940942A822BB200231D7C /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520940932A822BB200231D7C /* TransactionListView.swift */; };
 		52181EA12A2B3EDB00B58E18 /* WalletAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52181EA02A2B3EDB00B58E18 /* WalletAppApp.swift */; };
 		52181EA32A2B3EDB00B58E18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52181EA22A2B3EDB00B58E18 /* ContentView.swift */; };
 		52181EA52A2B3EDE00B58E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52181EA42A2B3EDE00B58E18 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		5209408D2A80F80800231D7C /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		5209408F2A80FF4F00231D7C /* ColorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetail.swift; sourceTree = "<group>"; };
 		520940912A81271C00231D7C /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		520940932A822BB200231D7C /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 		52181E9D2A2B3EDB00B58E18 /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52181EA02A2B3EDB00B58E18 /* WalletAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppApp.swift; sourceTree = "<group>"; };
 		52181EA22A2B3EDB00B58E18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				5209408D2A80F80800231D7C /* ActionButtonView.swift */,
 				5209408F2A80FF4F00231D7C /* ColorDetail.swift */,
 				520940912A81271C00231D7C /* TransactionRow.swift */,
+				520940932A822BB200231D7C /* TransactionListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				520940922A81271C00231D7C /* TransactionRow.swift in Sources */,
 				5252AF7E2A6ED5AC00ADAA12 /* ProfileAvartar.swift in Sources */,
 				5209408E2A80F80800231D7C /* ActionButtonView.swift in Sources */,
+				520940942A822BB200231D7C /* TransactionListView.swift in Sources */,
 				52181EA12A2B3EDB00B58E18 /* WalletAppApp.swift in Sources */,
 				520940902A80FF4F00231D7C /* ColorDetail.swift in Sources */,
 			);

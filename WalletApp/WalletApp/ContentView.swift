@@ -12,7 +12,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             ZStack {
-                
+                // background
+                Color("blue")
+                    .ignoresSafeArea()
                 VStack(){
                     HStack{
                         Circle()
@@ -63,7 +65,7 @@ struct ContentView: View {
                 
                 
             }
-            .background(Color("blue"))
+            
             
             
             

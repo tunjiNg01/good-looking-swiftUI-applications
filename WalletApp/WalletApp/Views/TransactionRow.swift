@@ -24,7 +24,7 @@ struct TransactionRow: View {
                     .font(.headline)
                     .foregroundColor(.white)
                 Spacer()
-                Text("$\(transaction.amount)")
+                Text(transaction.amount.setFormater())
                     .font(.headline)
                     .foregroundColor(.white)
             }
